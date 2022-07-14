@@ -1,0 +1,799 @@
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes research-1 {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 80%;
+  }
+}
+
+@keyframes research-1 {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 80%;
+  }
+}
+
+@-webkit-keyframes research-2-3 {
+  0% {
+    background-position: 0% 10%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
+
+@keyframes research-2-3 {
+  0% {
+    background-position: 0% 10%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
+
+/*  * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes research-1 {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 80%;
+  }
+}
+
+@keyframes research-2-3 {
+  0% {
+    background-position: 0% 10%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
+
+/*  * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+footer {
+  background-color: #06283d;
+  margin-top: 100px;
+  padding-top: 30px;
+}
+
+footer .title-contact {
+  font-size: 2em;
+}
+
+footer .contact-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+}
+
+@media all and (max-width: 1200px) {
+  footer .contact-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer .contact-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media all and (max-width: 1200px) {
+  footer .contact-information {
+    padding: 10px 5px 30px;
+    margin: 0 auto;
+  }
+}
+
+footer .contact-information_text {
+  display: inherit;
+}
+
+@media all and (max-width: 576px) {
+  footer .contact-information_text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+footer .contact-information_text a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3em;
+  padding: 0 20px;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+footer .contact-information_text a:hover {
+  color: #01a6fa;
+}
+
+@media all and (max-width: 1200px) {
+  footer .contact-information_text a {
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 576px) {
+  footer .contact-information_text a {
+    padding: 15px 0;
+    font-size: 1.2em;
+  }
+}
+
+footer .contact-information_text a p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+footer .contact-information_text a span {
+  font-size: 1.7em;
+}
+
+footer .contact-line {
+  position: relative;
+  margin: 0 50px;
+}
+
+@media all and (max-width: 1200px) {
+  footer .contact-line {
+    border-top: solid 2px white;
+    padding: 15px 0;
+  }
+}
+
+footer .contact-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-right: solid 2px white;
+}
+
+@media all and (max-width: 1200px) {
+  footer .contact-line::after {
+    display: none;
+  }
+}
+
+footer .contact-social {
+  margin-left: 50px;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 40px;
+}
+
+@media all and (max-width: 1200px) {
+  footer .contact-social {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 0;
+    gap: 0;
+  }
+}
+
+footer .contact-social a {
+  font-size: 3em;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+footer .contact-social a:hover {
+  color: #01a6fa;
+}
+
+@media all and (max-width: 576px) {
+  footer .contact-social a {
+    font-size: 2.5em;
+  }
+}
+
+footer .signature {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 1.1em;
+}
+
+footer .signature_dev {
+  text-decoration: none;
+  color: #01a6fa;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+footer .signature_dev:hover {
+  color: lightgrey;
+}
+
+body {
+  background-color: black !important;
+}
+
+header {
+  height: 100vh;
+}
+
+header .wrapper-video .gradient {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -99;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.1), rgba(2, 2, 2, 0.7));
+}
+
+header .wrapper-video .background-video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -9999;
+  top: 0;
+  left: 0;
+}
+
+header nav {
+  position: absolute;
+}
+
+header nav .navbar-toggler {
+  border: none;
+  font-size: 1.5em;
+}
+
+@media all and (max-width: 992px) {
+  header nav .navbar-collapse {
+    position: absolute;
+    top: 50px;
+  }
+}
+
+header nav .nav-item {
+  font-size: 1.5em;
+  margin-right: 30px;
+}
+
+header .title {
+  position: relative;
+  top: 30%;
+}
+
+@media all and (max-width: 576px) {
+  header .title {
+    top: 25%;
+  }
+}
+
+header .title h1 {
+  font-size: 5em;
+}
+
+@media all and (max-width: 576px) {
+  header .title h1 {
+    font-size: 3.5em;
+  }
+}
+
+header .title h1::after {
+  content: "";
+  width: 20%;
+  border-bottom: solid 2px white;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+header .title .p-title {
+  margin-top: 40px;
+  font-size: 1.6em;
+}
+
+header .group-arrow {
+  position: relative;
+  top: 56%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 0;
+  margin: 0 auto;
+  font-size: 3em;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+@media all and (max-width: 576px) {
+  header .group-arrow {
+    top: 40%;
+  }
+}
+
+header .group-arrow .arrows {
+  -webkit-animation: arrow 2s linear infinite alternate;
+          animation: arrow 2s linear infinite alternate;
+  display: block;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  border-radius: 2px;
+  margin: 0 0 -3px -4px;
+  width: 25px;
+  height: 25px;
+}
+
+header .group-arrow .arrows:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+header .group-arrow .arrows:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+section .title-research {
+  padding: 70px 0;
+  position: relative;
+  max-width: 300px;
+  margin: 50px auto;
+  font-size: 2.5em;
+}
+
+section .title-research::before, section .title-research::after,
+section .title-research span::before,
+section .title-research span::after {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 20px;
+  position: absolute;
+}
+
+section .title-research::before {
+  top: 60px;
+  left: 0px;
+  border-top: 2px solid #01a6fa;
+  border-left: 2px solid #01a6fa;
+}
+
+section .title-research::after {
+  bottom: 50px;
+  right: 0px;
+  border-bottom: 2px solid #01a6fa;
+  border-right: 2px solid #01a6fa;
+}
+
+section .title-research-teaching {
+  max-width: 230px;
+}
+
+section .research h3 {
+  padding-bottom: 30px;
+}
+
+@media all and (max-width: 350px) {
+  section .research h3 {
+    padding-bottom: 20px;
+  }
+}
+
+section .research .research-text {
+  font-size: 1.1em;
+}
+
+@media all and (max-width: 350px) {
+  section .research .research-text {
+    font-size: 1.05em;
+  }
+}
+
+section .research .research-1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/Images/Research/Coralreef.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/Images/Research/Coralreef.jpg);
+  height: 500px;
+  background-size: cover;
+  margin-bottom: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: research-1 6s cubic-bezier(0, -0.01, 0.68, 1) forwards;
+          animation: research-1 6s cubic-bezier(0, -0.01, 0.68, 1) forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+section .research .research-1:hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@media all and (max-width: 576px) {
+  section .research .research-1 {
+    margin-bottom: 350px;
+  }
+}
+
+section .research .research-2 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/Images/Research/Plastic.jpg) 0% 10%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/Images/Research/Plastic.jpg) 0% 10%;
+  height: 500px;
+  background-size: cover;
+  margin-bottom: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-animation: research-2-3 8s cubic-bezier(0, -0.01, 0.68, 1) forwards;
+          animation: research-2-3 8s cubic-bezier(0, -0.01, 0.68, 1) forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+section .research .research-2:hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@media all and (max-width: 576px) {
+  section .research .research-2 {
+    margin-bottom: 350px;
+  }
+}
+
+section .research .research-3 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/Images/Research/Fish.jpg) 0% 10%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/Images/Research/Fish.jpg) 0% 10%;
+  height: 500px;
+  background-size: cover;
+  margin-bottom: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: research-2-3 8s cubic-bezier(0, -0.01, 0.68, 1) forwards;
+          animation: research-2-3 8s cubic-bezier(0, -0.01, 0.68, 1) forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+section .research .research-3:hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+@media all and (max-width: 576px) {
+  section .research .research-3 {
+    margin-bottom: 350px;
+  }
+}
+
+section .research .research-left-text {
+  background-color: rgba(6, 40, 61, 0.8);
+  position: relative;
+  left: 10%;
+  padding: 0 50px;
+  max-width: 500px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media all and (max-width: 1200px) {
+  section .research .research-left-text {
+    left: 0;
+  }
+}
+
+@media all and (max-width: 576px) {
+  section .research .research-left-text {
+    top: 250px;
+    border-radius: 5px;
+    height: 95%;
+  }
+}
+
+@media all and (max-width: 350px) {
+  section .research .research-left-text {
+    height: 100%;
+  }
+}
+
+section .research .research-right-text {
+  background-color: rgba(6, 40, 61, 0.8);
+  position: relative;
+  right: 10%;
+  padding: 0 50px;
+  max-width: 500px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media all and (max-width: 1200px) {
+  section .research .research-right-text {
+    right: 0;
+  }
+}
+
+@media all and (max-width: 576px) {
+  section .research .research-right-text {
+    top: 250px;
+    border-radius: 5px;
+  }
+}
+
+section .citation {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(/Images/Background/bubble-ban.jpg) no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/Images/Background/bubble-ban.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+  margin: 200px auto 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media all and (max-width: 576px) {
+  section .citation {
+    height: 350px;
+  }
+}
+
+section .citation_container {
+  max-width: 800px;
+  text-align: center;
+}
+
+section .citation_container_text {
+  font-size: 1.8em;
+  font-style: italic;
+}
+
+@media all and (max-width: 576px) {
+  section .citation_container_text {
+    font-size: 1.6em;
+  }
+}
+
+section .citation_container_author {
+  font-size: 1.4em;
+  padding-top: 5px;
+}
+
+@media all and (max-width: 576px) {
+  section .citation_container_author {
+    font-size: 1.3em;
+  }
+}
+
+section .teaching {
+  margin: 100px auto 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media all and (max-width: 1500px) {
+  section .teaching {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media all and (max-width: 768px) {
+  section .teaching {
+    margin: 0 auto 100px;
+  }
+}
+
+@media all and (max-width: 576px) {
+  section .teaching {
+    margin: 100px auto 100px;
+  }
+}
+
+section .teaching .card {
+  border: none;
+  background-color: black;
+  margin: 0 50px;
+  overflow: hidden;
+}
+
+@media all and (max-width: 1500px) {
+  section .teaching .card {
+    max-width: 60%;
+    margin: 50px auto;
+  }
+}
+
+@media all and (max-width: 576px) {
+  section .teaching .card {
+    max-width: 90%;
+    margin: 20px auto 100px;
+  }
+}
+
+section .teaching .card:hover .card-img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+section .teaching .card .card-img {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+section .teaching .card .card-body {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(6, 40, 61, 0.8);
+  border-radius: 0 0 5px 5px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 50%;
+}
+
+@media all and (max-width: 1500px) {
+  section .teaching .card .card-body {
+    height: auto;
+  }
+}
+
+@media all and (max-width: 576px) {
+  section .teaching .card .card-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+section .teaching .card .card-body h5 {
+  font-size: 1.6em;
+  padding-bottom: 20px;
+}
+
+@media all and (max-width: 576px) {
+  section .teaching .card .card-body h5 {
+    padding-bottom: 20px;
+  }
+}
+
+section .teaching .card .card-body p {
+  font-size: 1.2em;
+}
+
+@media all and (max-width: 576px) {
+  section .teaching .card .card-body p {
+    font-size: 1.1em;
+  }
+}
+
+section .teaching .card .card-body-top {
+  top: 0;
+  bottom: auto;
+}
+/*# sourceMappingURL=Style.css.map */

@@ -1,0 +1,85 @@
+$primary-color: black;
+$secondary-color: white;
+$research-color: #06283d;
+$hover-color: #01a6fa;
+
+@mixin ordiL {
+  @media all and (max-width: 1500px) {
+    @content;
+  }
+}
+@mixin ordi {
+  @media all and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin navbar {
+  @media all and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media all and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media all and (max-width: 576px) {
+    @content;
+  }
+}
+
+@mixin mobileMedium {
+  @media all and (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin mobileSmall {
+  @media all and (max-width: 350px) {
+    @content;
+  }
+}
+
+// Animation
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes research-1 {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 80%;
+  }
+}
+@keyframes research-2-3 {
+  0% {
+    background-position: 0% 10%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
+
+
+// Pour débuger quand ça sort de l'écran
+
+/*  * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */

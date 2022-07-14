@@ -1,0 +1,250 @@
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes research-1 {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 80%;
+  }
+}
+
+@keyframes research-1 {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 80%;
+  }
+}
+
+@-webkit-keyframes research-2-3 {
+  0% {
+    background-position: 0% 10%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
+
+@keyframes research-2-3 {
+  0% {
+    background-position: 0% 10%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
+
+/*  * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+footer {
+  background-color: #06283d;
+  margin-top: 100px;
+  padding-top: 30px;
+}
+
+footer .title-contact {
+  font-size: 2em;
+}
+
+footer .contact-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+}
+
+@media all and (max-width: 1200px) {
+  footer .contact-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer .contact-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media all and (max-width: 1200px) {
+  footer .contact-information {
+    padding: 10px 5px 30px;
+    margin: 0 auto;
+  }
+}
+
+footer .contact-information_text {
+  display: inherit;
+}
+
+@media all and (max-width: 576px) {
+  footer .contact-information_text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+footer .contact-information_text a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3em;
+  padding: 0 20px;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+footer .contact-information_text a:hover {
+  color: #01a6fa;
+}
+
+@media all and (max-width: 1200px) {
+  footer .contact-information_text a {
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 576px) {
+  footer .contact-information_text a {
+    padding: 15px 0;
+    font-size: 1.2em;
+  }
+}
+
+footer .contact-information_text a p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+footer .contact-information_text a span {
+  font-size: 1.7em;
+}
+
+footer .contact-line {
+  position: relative;
+  margin: 0 50px;
+}
+
+@media all and (max-width: 1200px) {
+  footer .contact-line {
+    border-top: solid 2px white;
+    padding: 15px 0;
+  }
+}
+
+footer .contact-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-right: solid 2px white;
+}
+
+@media all and (max-width: 1200px) {
+  footer .contact-line::after {
+    display: none;
+  }
+}
+
+footer .contact-social {
+  margin-left: 50px;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 40px;
+}
+
+@media all and (max-width: 1200px) {
+  footer .contact-social {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 0;
+    gap: 0;
+  }
+}
+
+footer .contact-social a {
+  font-size: 3em;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
+footer .contact-social a:hover {
+  color: #01a6fa;
+}
+
+@media all and (max-width: 576px) {
+  footer .contact-social a {
+    font-size: 2.5em;
+  }
+}
+
+footer .signature {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 1.1em;
+}
+
+footer .signature_dev {
+  text-decoration: none;
+  color: #01a6fa;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+footer .signature_dev:hover {
+  color: lightgrey;
+}
+/*# sourceMappingURL=footer.css.map */

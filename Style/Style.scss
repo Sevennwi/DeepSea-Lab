@@ -1,0 +1,351 @@
+@import "./Utils/variable";
+@import "./Layout/footer";
+
+body {
+  background-color: $primary-color !important;
+}
+
+header {
+  height: 100vh;
+  .wrapper-video {
+    .gradient {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -99;
+      background-image: radial-gradient(rgba(0, 0, 0, 0.1), rgba(2, 2, 2, 0.7));
+    }
+    .background-video {
+      object-fit: cover;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      z-index: -9999;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  nav {
+    position: absolute;
+    .navbar-toggler {
+      border: none;
+      font-size: 1.5em;
+    }
+
+    .navbar-collapse {
+      @include navbar {
+        position: absolute;
+        top: 50px;
+      }
+    }
+    .nav-item {
+      font-size: 1.5em;
+      margin-right: 30px;
+    }
+  }
+
+  .title {
+    position: relative;
+    top: 30%;
+    @include mobile {
+      top: 25%;
+    }
+    h1 {
+      font-size: 5em;
+      @include mobile {
+        font-size: 3.5em;
+      }
+      &::after {
+        content: "";
+        width: 20%;
+        border-bottom: solid 2px $secondary-color;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        margin-top: 40px;
+      }
+    }
+    .p-title {
+      margin-top: 40px;
+      font-size: 1.6em;
+    }
+  }
+
+  .group-arrow {
+    position: relative;
+    top: 56%;
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    margin: 0 auto;
+    font-size: 3em;
+    color: #f2f2f2;
+    cursor: pointer;
+    @include mobile {
+      top: 40%;
+    }
+    .arrows {
+      animation: arrow 2s linear infinite alternate;
+      display: block;
+      transform: rotate(45deg);
+      border-right: 3px solid white;
+      border-bottom: 3px solid white;
+      border-radius: 2px;
+      margin: 0 0 -3px -4px;
+      width: 25px;
+      height: 25px;
+      &:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+      &:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+    }
+  }
+}
+
+section {
+  .title-research {
+    padding: 70px 0;
+    position: relative;
+    max-width: 300px;
+    margin: 50px auto;
+    font-size: 2.5em;
+    &::before,
+    &::after,
+    span::before,
+    span::after {
+      display: block;
+      content: "";
+      width: 30px;
+      height: 20px;
+      position: absolute;
+    }
+    &::before {
+      top: 60px;
+      left: 0px;
+      border-top: 2px solid $hover-color;
+      border-left: 2px solid $hover-color;
+    }
+    &::after {
+      bottom: 50px;
+      right: 0px;
+      border-bottom: 2px solid $hover-color;
+      border-right: 2px solid $hover-color;
+    }
+  }
+  .title-research-teaching {
+    max-width: 230px;
+  }
+  .research {
+    h3 {
+      padding-bottom: 30px;
+      @include mobileSmall {
+        padding-bottom: 20px;
+      }
+    }
+    .research-text {
+      font-size: 1.1em;
+      @include mobileSmall {
+        font-size: 1.05em;
+      }
+    }
+    .research-1 {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(/Images/Research/Coralreef.jpg);
+      height: 500px;
+      background-size: cover;
+      margin-bottom: 150px;
+      display: flex;
+      animation: research-1 6s cubic-bezier(0, -0.01, 0.68, 1) forwards;
+      animation-play-state: paused;
+      &:hover {
+        animation-play-state: running;
+      }
+      @include mobile {
+        margin-bottom: 350px;
+      }
+    }
+
+    .research-2 {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(/Images/Research/Plastic.jpg) 0% 10%;
+      height: 500px;
+      background-size: cover;
+      margin-bottom: 150px;
+      display: flex;
+      justify-content: flex-end;
+      animation: research-2-3 8s cubic-bezier(0, -0.01, 0.68, 1) forwards;
+      animation-play-state: paused;
+      &:hover {
+        animation-play-state: running;
+      }
+      @include mobile {
+        margin-bottom: 350px;
+      }
+    }
+    .research-3 {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(/Images/Research/Fish.jpg) 0% 10%;
+      height: 500px;
+      background-size: cover;
+      margin-bottom: 150px;
+      display: flex;
+      animation: research-2-3 8s cubic-bezier(0, -0.01, 0.68, 1) forwards;
+      animation-play-state: paused;
+      &:hover {
+        animation-play-state: running;
+      }
+      @include mobile {
+        margin-bottom: 350px;
+      }
+    }
+    .research-left-text {
+      background-color: rgba($color: $research-color, $alpha: 0.8);
+      position: relative;
+      left: 10%;
+      padding: 0 50px;
+      max-width: 500px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @include ordi {
+        left: 0;
+      }
+      @include mobile {
+        top: 250px;
+        border-radius: 5px;
+        height: 95%;
+      }
+      @include mobileSmall {
+        height: 100%;
+      }
+    }
+    .research-right-text {
+      background-color: rgba($color: $research-color, $alpha: 0.8);
+      position: relative;
+      right: 10%;
+      padding: 0 50px;
+      max-width: 500px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @include ordi {
+        right: 0;
+      }
+      @include mobile {
+        top: 250px;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .citation {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(/Images/Background/bubble-ban.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    margin: 200px auto 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+      height: 350px;
+    }
+    &_container {
+      max-width: 800px;
+      text-align: center;
+      &_text {
+        font-size: 1.8em;
+        font-style: italic;
+        @include mobile {
+          font-size: 1.6em;
+        }
+      }
+      &_author {
+        font-size: 1.4em;
+        padding-top: 5px;
+        @include mobile {
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+
+  .teaching {
+    margin: 100px auto 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @include ordiL {
+      flex-direction: column;
+    }
+    @include tablet {
+      margin: 0 auto 100px;
+    }
+    @include mobile {
+      margin: 100px auto 100px;
+    }
+    .card {
+      border: none;
+      background-color: $primary-color;
+      margin: 0 50px;
+      overflow: hidden;
+      @include ordiL {
+        max-width: 60%;
+        margin: 50px auto;
+      }
+      @include mobile {
+        max-width: 90%;
+        margin: 20px auto 100px;
+      }
+      &:hover .card-img {
+        transform: scale(1.1);
+      }
+      .card-img {
+        transition: transform 0.5s ease-in-out;
+      }
+      .card-body {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: rgba($color: $research-color, $alpha: 0.8);
+        border-radius: 0 0 5px 5px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        height: 50%;
+        @include ordiL {
+          height: auto;
+        }
+        @include mobile {
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+        h5 {
+          font-size: 1.6em;
+          padding-bottom: 20px;
+          @include mobile {
+            padding-bottom: 20px;
+          }
+        }
+        p {
+          font-size: 1.2em;
+          @include mobile {
+            font-size: 1.1em;
+          }
+        }
+      }
+      .card-body-top {
+        top: 0;
+        bottom: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+@import "../Utils/variable";
+
+footer {
+  background-color: $research-color;
+  margin-top: 100px;
+  padding-top: 30px;
+  .title-contact {
+    font-size: 2em;
+  }
+  .contact-row {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    @include ordi {
+      flex-direction: column;
+    }
+  }
+  .contact-information {
+    display: flex;
+    align-items: center;
+    @include ordi {
+      padding: 10px 5px 30px;
+      margin: 0 auto;
+    }
+    &_text {
+      display: inherit;
+      @include mobile {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      a {
+        display: flex;
+        text-decoration: none;
+        color: $secondary-color;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3em;
+        padding: 0 20px;
+        transition: color 0.2s ease-in-out;
+        &:hover {
+          color: $hover-color;
+        }
+        @include ordi {
+          padding: 0;
+        }
+        @include mobile {
+          padding: 15px 0;
+          font-size: 1.2em;
+        }
+        p {
+          padding: 0 20px;
+          margin: 0;
+        }
+        span {
+          font-size: 1.7em;
+        }
+      }
+    }
+  }
+  .contact-line {
+    position: relative;
+    margin: 0 50px;
+    @include ordi {
+      border-top: solid 2px white;
+      padding: 15px 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      border-right: solid 2px white;
+      @include ordi {
+        display: none;
+      }
+    }
+  }
+  .contact-social {
+    margin-left: 50px;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    gap: 40px;
+    @include ordi {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-left: 0;
+      gap: 0;
+    }
+    a {
+      font-size: 3em;
+      text-decoration: none;
+      color: $secondary-color;
+      transition: color 0.3s ease-in-out;
+      &:hover {
+        color: $hover-color;
+      }
+      @include mobile {
+        font-size: 2.5em;
+      }
+    }
+  }
+  .signature {
+    margin: 0;
+    padding: 20px 0;
+    font-size: 1.1em;
+    &_dev {
+      text-decoration: none;
+      color: $hover-color;
+      transition: color 0.2s ease-in-out;
+      &:hover {
+        color: lightgrey;
+      }
+    }
+  }
+}

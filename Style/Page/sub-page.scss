@@ -1,0 +1,276 @@
+@import "../Utils/variable";
+@import "../Layout/footer";
+
+body {
+  background-color: $primary-color !important;
+}
+
+.header-team {
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(2, 2, 2, 0.6)),
+    url(/Images/Team/Background/scuba.jpg) center;
+  background-size: cover;
+}
+
+.header-publi {
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(2, 2, 2, 0.6)),
+    url(/Images/Team/Background/jellyfish.jpg) center;
+  background-size: cover;
+}
+
+header {
+  height: 100vh;
+  nav {
+    position: absolute;
+    .navbar-toggler {
+      border: none;
+      font-size: 1.5em;
+    }
+
+    .navbar-collapse {
+      @include navbar {
+        position: absolute;
+        top: 50px;
+      }
+    }
+    .nav-item {
+      font-size: 1.5em;
+      margin-right: 30px;
+    }
+  }
+
+  .title {
+    position: relative;
+    top: 30%;
+    @include mobile {
+      top: 25%;
+    }
+    h1 {
+      font-size: 5em;
+      @include mobile {
+        font-size: 3.5em;
+      }
+      &::after {
+        content: "";
+        width: 20%;
+        border-bottom: solid 2px $secondary-color;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        margin-top: 40px;
+      }
+    }
+    .p-title {
+      margin-top: 40px;
+      font-size: 2em;
+    }
+  }
+
+  .group-arrow {
+    position: relative;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    margin: 0 auto;
+    font-size: 3em;
+    color: #f2f2f2;
+    cursor: pointer;
+    .arrows {
+      animation: arrow 2s linear infinite alternate;
+      display: block;
+      transform: rotate(45deg);
+      border-right: 3px solid white;
+      border-bottom: 3px solid white;
+      border-radius: 2px;
+      margin: 0 0 -3px -4px;
+      width: 25px;
+      height: 25px;
+      &:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+      &:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+    }
+  }
+}
+
+// Styles for all titles
+
+.section-title {
+  padding: 70px 0;
+  position: relative;
+  color: $secondary-color;
+  max-width: 220px;
+  margin: 0 auto;
+  font-size: 2.5em;
+  &::before,
+  &::after,
+  span::before,
+  span::after {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 20px;
+    position: absolute;
+  }
+  &::before {
+    top: 60px;
+    left: 0px;
+    border-top: 2px solid $hover-color;
+    border-left: 2px solid $hover-color;
+  }
+  &::after {
+    bottom: 50px;
+    right: 0px;
+    border-bottom: 2px solid $hover-color;
+    border-right: 2px solid $hover-color;
+  }
+}
+.section-title-phd {
+  max-width: 150px;
+}
+.section-title-students {
+  max-width: 400px;
+}
+.section-title-date {
+  max-width: 160px;
+}
+
+// Style for team page
+
+.section-team {
+  .card-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    @include mobile {
+      flex-direction: column;
+    }
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 30px;
+      object-fit: cover;
+    }
+    h5 {
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    &_text {
+      max-width: 500px;
+      margin-left: 50px;
+      text-align: left;
+      @include mobile {
+        text-align: center;
+        margin: 20px 10px;
+      }
+    }
+    &_text-right {
+      margin-left: 0;
+      margin-right: 50px;
+      text-align: right;
+      @include mobile {
+        text-align: center;
+        margin: 20px 10px;
+      }
+    }
+  }
+  .card-team-right {
+    @include mobile {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+// Style for publi page
+
+.section-publi {
+  display: flex;
+  .publi-container {
+    margin: 100px 0;
+    &_btn-more {
+      color: $hover-color;
+      text-decoration: none;
+      border: none;
+      margin-top: 50px;
+      transition: color 0.1s ease-in-out;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+    &_link {
+      margin-left: 30px;
+      padding: 5px;
+      text-decoration: none;
+      color: $hover-color;
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        color: $secondary-color;
+      }
+      span {
+        margin-left: 7px;
+      }
+    }
+  }
+  .container-year {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .list-year {
+      margin: 300px 60px 0 0;
+      padding: 0 10px;
+      list-style-type: none;
+      font-size: 1.4em;
+      position: sticky;
+      top: 38%;
+      border-right: 1px solid $hover-color;
+      @include ordi {
+        margin: 300px 20px 0 0;
+      }
+      @include tablet {
+        margin: 300px 20px 0 0;
+      }
+      @include mobile {
+        margin: 300px 10px 0 0;
+        font-size: 1.3em;
+      }
+      li {
+        width: 100%;
+        margin: 20px 0;
+        &:hover {
+          &::before {
+            background-color: $secondary-color;
+          }
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: $hover-color;
+          border-radius: 50%;
+          margin-top: 15px;
+          //left: -6px;
+          left: 74px;
+          transition: all 0.2s ease-in-out;
+          @include mobile {
+            left: 70px;
+          }
+        }
+        a {
+          text-decoration: none;
+          font-size: 1.2em;
+          color: $hover-color;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@-webkit-keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes research-1 {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 80%;
+  }
+}
+
+@keyframes research-1 {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 0% 80%;
+  }
+}
+
+@-webkit-keyframes research-2-3 {
+  0% {
+    background-position: 0% 10%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
+
+@keyframes research-2-3 {
+  0% {
+    background-position: 0% 10%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
+
+/*  * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+/*# sourceMappingURL=variable.css.map */
