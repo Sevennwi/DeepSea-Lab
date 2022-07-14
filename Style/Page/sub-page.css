@@ -478,6 +478,12 @@ header .group-arrow .arrows:nth-child(3) {
   font-size: 1.5em;
 }
 
+@media all and (max-width: 576px) {
+  .section-team .card-team h5 {
+    padding: 10px 0 15px;
+  }
+}
+
 .section-team .card-team p {
   font-size: 1.2em;
 }
