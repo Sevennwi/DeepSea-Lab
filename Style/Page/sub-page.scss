@@ -75,6 +75,9 @@ header {
     font-size: 3em;
     color: #f2f2f2;
     cursor: pointer;
+    @include mobile {
+      top: 48%;
+    }
     .arrows {
       animation: arrow 2s linear infinite alternate;
       display: block;
@@ -135,6 +138,22 @@ header {
 }
 .section-title-date {
   max-width: 160px;
+  text-align: center;
+  @include mobile {
+    text-align: left;
+    &::before {
+      top: 60px;
+      left: -30px;
+      border-top: 2px solid $hover-color;
+      border-left: 2px solid $hover-color;
+    }
+    &::after {
+      bottom: 50px;
+      right: 30px;
+      border-bottom: 2px solid $hover-color;
+      border-right: 2px solid $hover-color;
+    }
+  }
 }
 
 // Style for team page
@@ -147,6 +166,7 @@ header {
     margin: 100px auto;
     @include mobile {
       flex-direction: column;
+      margin: 40px auto;
     }
     img {
       width: 250px;

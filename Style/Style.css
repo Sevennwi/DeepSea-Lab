@@ -190,7 +190,7 @@ footer .contact-information_text a:hover {
 @media all and (max-width: 576px) {
   footer .contact-information_text a {
     padding: 15px 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 
@@ -262,7 +262,7 @@ footer .contact-social a:hover {
 
 @media all and (max-width: 576px) {
   footer .contact-social a {
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
 }
 
@@ -649,6 +649,7 @@ section .citation {
 @media all and (max-width: 576px) {
   section .citation {
     height: 350px;
+    margin: 200px auto 50px;
   }
 }
 
@@ -710,7 +711,7 @@ section .teaching {
 
 @media all and (max-width: 576px) {
   section .teaching {
-    margin: 100px auto 100px;
+    margin: 50px auto 100px;
   }
 }
 
@@ -778,7 +779,7 @@ section .teaching .card .card-body h5 {
 
 @media all and (max-width: 576px) {
   section .teaching .card .card-body h5 {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 }
 
@@ -789,6 +790,12 @@ section .teaching .card .card-body p {
 @media all and (max-width: 576px) {
   section .teaching .card .card-body p {
     font-size: 1.1em;
+  }
+}
+
+@media all and (max-width: 400px) {
+  section .teaching .card .card-body p {
+    font-size: 1em;
   }
 }
 

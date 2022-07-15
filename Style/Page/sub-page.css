@@ -190,7 +190,7 @@ footer .contact-information_text a:hover {
 @media all and (max-width: 576px) {
   footer .contact-information_text a {
     padding: 15px 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 
@@ -262,7 +262,7 @@ footer .contact-social a:hover {
 
 @media all and (max-width: 576px) {
   footer .contact-social a {
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
 }
 
@@ -375,6 +375,12 @@ header .group-arrow {
   cursor: pointer;
 }
 
+@media all and (max-width: 576px) {
+  header .group-arrow {
+    top: 48%;
+  }
+}
+
 header .group-arrow .arrows {
   -webkit-animation: arrow 2s linear infinite alternate;
           animation: arrow 2s linear infinite alternate;
@@ -442,6 +448,25 @@ header .group-arrow .arrows:nth-child(3) {
 
 .section-title-date {
   max-width: 160px;
+  text-align: center;
+}
+
+@media all and (max-width: 576px) {
+  .section-title-date {
+    text-align: left;
+  }
+  .section-title-date::before {
+    top: 60px;
+    left: -30px;
+    border-top: 2px solid #01a6fa;
+    border-left: 2px solid #01a6fa;
+  }
+  .section-title-date::after {
+    bottom: 50px;
+    right: 30px;
+    border-bottom: 2px solid #01a6fa;
+    border-right: 2px solid #01a6fa;
+  }
 }
 
 .section-team .card-team {
@@ -463,6 +488,7 @@ header .group-arrow .arrows:nth-child(3) {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 40px auto;
   }
 }
 
